@@ -15,7 +15,7 @@ html, body {
     padding: 0 20px; 
 }
 
-/* AM styling */
+/* About Me section styling */
 .about-me {
     color: white; 
     max-width: 50%; 
@@ -51,7 +51,7 @@ body {
     overflow-x: hidden; 
 }
 
-/* Sticky header */
+/* sticky header */
 header {
     position: sticky;  
     top: 0;           
@@ -61,7 +61,7 @@ header {
     z-index: 1000;   
 }
 
-/* Header styling */
+/* header styling */
 header {
     display: flex; 
     align-items: center; 
@@ -71,25 +71,24 @@ header {
     color: white; 
 }
 
-/* Header image styling */
+/* header image styling */
 .header-image {
     height: 60px; 
-    margin-left: 20px; 
-    opacity: 1; 
+    margin-left: 20px;
+    opacity: 1; /
 }
 
-/* Header name styling */
+/* header name styling */
 .header-name {
     transition: opacity 0.3s ease; 
 }
 
-/* Hidden state */
+/* hidden state */
 .hidden {
     opacity: 0; 
-    visibility: hidden; 
-}
+    visibility: hidden; }
 
-/* Navigation styles */
+/* navigation styles */
 nav {
     display: flex;          
     justify-content: center; 
@@ -101,18 +100,18 @@ nav a {
     text-decoration: none; 
 }
 
-/* Section styling */
+/* section styling */
 section {
     margin: 20px;
 }
 
-/* Flexbox for projects, skills, experience */
+/* flexbox for projects, skills, experience */
 .projects, .skills, .experience {
     display: flex;
     flex-wrap: wrap;
 }
 
-/* Project, skill, experience item styling */
+/* roject, skill, experience item styling */
 .project, .experience-item {
     background-color: #fff;
     margin: 10px;
@@ -124,7 +123,7 @@ section {
 .soft-skills-container {
     display: flex;             
     flex-direction: column;    
-    align-items: center;       
+    align-items: center;      
     text-align: center;        
     margin: 20px;             
 }
@@ -151,7 +150,7 @@ section {
     transform: scale(1.05); 
 }
 
-/* styling for the Hard Skills section */
+/* styling for the Hard Skills */
 .hard-skills-section {
     margin: 20px 0;
     text-align: center; 
@@ -176,13 +175,13 @@ section {
     text-align: left; 
 }
 
-/* style the title of each hard skill */
+/* style the title of each hard skill category */
 .hard-skill-box h3 {
     font-size: 1.5rem; 
     margin-bottom: 10px; 
 }
 
-/* style the lists inside each box */
+/* style the lists inside box */
 .hard-skill-box ul {
     list-style-type: none; 
     padding: 0; 
@@ -193,7 +192,7 @@ section {
     font-size: 1rem; 
 }
 
-/* Footer styling */
+/* footer styling */
 footer {
     text-align: center;
     padding: 1rem;
@@ -205,7 +204,7 @@ footer {
 .hidden {
     opacity: 0;
 }
-
+/* train */ 
 .train-container {
     overflow: hidden; 
     white-space: nowrap; 

@@ -10,7 +10,6 @@ window.addEventListener('scroll', function() {
     }
 });
 
-
 const headerName = document.querySelector('.header-name');
 const header = document.querySelector('header');
 
