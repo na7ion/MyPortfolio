@@ -1,21 +1,35 @@
+html, body {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
 /* Fullscreen background */
 .background-container {
-    width: 100%;
-    height: 60vh; /* Fullscreen height */
+    width: calc(100% - 40px); 
+    height: 60vh; 
     display: flex;
-    justify-content: space-between; /* Space between the about me and image */
-    align-items: center; /* Center items vertically */
-    background-color: #333; /* Background color */
-    padding: 0 20px; /* Add some horizontal padding */
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #333; 
+    padding: 0 20px; 
 }
 
-/* About Me section styling */
+/* AM styling */
 .about-me {
-    color: white; /* Text color for about me */
-    max-width: 50%; /* Limit the width of the about me section */
+    color: white; 
+    max-width: 50%; 
 }
 
-/* Centered square box for the image */
+.hard-skills-section {
+    margin: 20px 0;
+    text-align: center; 
+}
+
+.click-why-section {
+    margin: 20px 0;
+    text-align: center; 
+}
 
 /* Image styling */
 .image-box img {
@@ -23,63 +37,68 @@
     height: 75%;
     object-fit: cover;
 }
+
 .image-box {
-    transition: transform 0.3s ease; /* Smooth transition for scaling */
+    transition: transform 0.3s ease; 
 }
+
 html {
-    zoom: 1; /* This property controls the scaling of the entire document */
+    zoom: 1; 
 }
 
 body {
     width: 100%;
-    overflow-x: hidden; /* Prevents horizontal scrollbars */
+    overflow-x: hidden; 
 }
 
 /* Sticky header */
 header {
-    position: sticky;  /* Make the header sticky */
-    top: 0;           /* Stick it to the top */
-    background-color: #333; /* Background color for the header */
-    color: white;     /* Text color */
-    padding: 1rem 0; /* Padding around the header */
-    z-index: 1000;   /* Ensure it stays above other content */
+    position: sticky;  
+    top: 0;           
+    background-color: #333; 
+    color: white;     
+    padding: 1rem 0; 
+    z-index: 1000;   
 }
+
 /* Header styling */
 header {
-    display: flex; /* Use flexbox to align items */
-    align-items: center; /* Center items vertically */
-    justify-content: space-between; /* Space between the items */
-    padding: 1rem 20px; /* Adjust padding as needed */
-    background-color: #333; /* Background color for the header */
-    color: white; /* Text color */
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 1rem 20px; 
+    background-color: #333; 
+    color: white; 
 }
 
 /* Header image styling */
 .header-image {
-    height: 60px; /* Set height of image in header */
-    margin-left: 20px; /* Add space to the left of the image */
-    opacity: 1; /* Ensure the image is visible */
+    height: 60px; 
+    margin-left: 20px; 
+    opacity: 1; 
 }
+
 /* Header name styling */
 .header-name {
-    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+    transition: opacity 0.3s ease; 
 }
 
 /* Hidden state */
 .hidden {
-    opacity: 0; /* Hide the name */
-    visibility: hidden; /* Prevent interaction */
+    opacity: 0; 
+    visibility: hidden; 
 }
+
 /* Navigation styles */
 nav {
-    display: flex;          /* Use flexbox for navigation */
-    justify-content: center; /* Center the links */
+    display: flex;          
+    justify-content: center; 
 }
 
 nav a {
-    margin: 0 15px;  /* Space between links */
-    color: white;     /* Link color */
-    text-decoration: none; /* No underline */
+    margin: 0 15px;  
+    color: white;     
+    text-decoration: none; 
 }
 
 /* Section styling */
@@ -99,77 +118,79 @@ section {
     margin: 10px;
     padding: 20px;
     flex-basis: 30%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* This applies to projects and experience only */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
+
 .soft-skills-container {
-    display: flex;             /* Use flexbox for alignment */
-    flex-direction: column;    /* Stack children vertically */
-    align-items: center;       /* Center items horizontally */
-    text-align: center;        /* Center text within the heading */
-    margin: 20px;             /* Add margin around the container if needed */
+    display: flex;             
+    flex-direction: column;    
+    align-items: center;       
+    text-align: center;        
+    margin: 20px;             
 }
-/* Bubble styles for skills */
+
+/* bubble styles for skills */
 .skill {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove default padding */
-    display: flex; /* Use flexbox for alignment */
-    flex-wrap: wrap; /* Allow items to wrap */
+    list-style-type: none; 
+    padding: 0; 
+    display: flex; 
+    flex-wrap: wrap; 
 }
 
 .skill li {
-    background-color: #4CAF50; /* Bubble background color */
-    color: white; /* Text color */
-    border-radius: 20px; /* Rounded corners for bubble effect */
-    padding: 15px 20px; /* Padding for the bubble */
-    margin: 10px; /* Margin between bubbles */
-    transition: transform 0.3s ease; /* Smooth transition for hover effect */
-    box-shadow: none; /* Remove shadow from skill bubbles */
+    background-color: #4CAF50; 
+    color: white; 
+    border-radius: 20px; 
+    padding: 15px 20px; 
+    margin: 10px; 
+    transition: transform 0.3s ease; 
+    box-shadow: none; 
 }
 
 .skill li:hover {
-    transform: scale(1.05); /* Slightly enlarge bubble on hover */
+    transform: scale(1.05); 
 }
 
-/* Styling for the Hard Skills section */
+/* styling for the Hard Skills section */
 .hard-skills-section {
     margin: 20px 0;
-    text-align: center; /* Center the title */
+    text-align: center; 
 }
 
 .hard-skills-container {
-    display: flex; /* Use Flexbox to align boxes horizontally */
-    flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
-    justify-content: space-between; /* Distribute boxes evenly */
-    gap: 20px; /* Space between each box */
-    overflow-x: auto; /* Enable horizontal scrolling if the content overflows */
+    display: flex; 
+    flex-wrap: nowrap; 
+    justify-content: space-between; 
+    gap: 20px; 
+    overflow-x: auto; 
 }
 
-/* Style each hard skill box */
+/* style each hard skill box */
 .hard-skill-box {
-    background-color: #f8f8f8; /* Light background color for the boxes */
-    border: 2px solid #333; /* Border around each box */
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px; /* Padding inside the box */
-    width: 18%; /* Set width for the boxes (adjust based on how many boxes you have) */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
-    text-align: left; /* Align text to the left inside the boxes */
+    background-color: #f8f8f8; 
+    border: 2px solid #333; 
+    border-radius: 10px; 
+    padding: 20px; 
+    width: 18%; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    text-align: left; 
 }
 
-/* Style the title of each hard skill category */
+/* style the title of each hard skill */
 .hard-skill-box h3 {
-    font-size: 1.5rem; /* Larger font size for the category titles */
-    margin-bottom: 10px; /* Space between title and the list */
+    font-size: 1.5rem; 
+    margin-bottom: 10px; 
 }
 
-/* Style the lists inside each box */
+/* style the lists inside each box */
 .hard-skill-box ul {
-    list-style-type: none; /* Remove default bullet points */
-    padding: 0; /* Remove padding */
+    list-style-type: none; 
+    padding: 0; 
 }
 
 .hard-skill-box li {
-    margin: 5px 0; /* Space between each list item */
-    font-size: 1rem; /* Set a readable font size */
+    margin: 5px 0; 
+    font-size: 1rem; 
 }
 
 /* Footer styling */
@@ -180,7 +201,52 @@ footer {
     color: white;
 }
 
-/* Disappear effect on scroll */
+/* disappear effect on scroll */
 .hidden {
     opacity: 0;
+}
+
+.train-container {
+    overflow: hidden; 
+    white-space: nowrap; 
+    width: 100%; 
+    background-color: #333; 
+    position: relative; 
+}
+
+.train {
+    display: inline-block; 
+    animation: scroll 10s linear infinite; 
+}
+
+.language {
+    display: inline-block; 
+    padding: 20px;
+    text-align: center; 
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logo {
+    width: 200px; 
+    height: auto; 
+}
+
+.language:hover {
+    background-color: #444; 
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%); 
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}
+
+#contact {
+    text-align: left; 
+    margin: 20px; 
 }
