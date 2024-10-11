@@ -75,7 +75,7 @@ header {
 .header-image {
     height: 60px; 
     margin-left: 20px;
-    opacity: 1; /
+    opacity: 1; 
 }
 
 /* header name styling */
@@ -86,7 +86,8 @@ header {
 /* hidden state */
 .hidden {
     opacity: 0; 
-    visibility: hidden; }
+    visibility: hidden; 
+}
 
 /* navigation styles */
 nav {
@@ -111,7 +112,7 @@ section {
     flex-wrap: wrap;
 }
 
-/* roject, skill, experience item styling */
+/* project, skill, experience item styling */
 .project, .experience-item {
     background-color: #fff;
     margin: 10px;
@@ -204,6 +205,7 @@ footer {
 .hidden {
     opacity: 0;
 }
+
 /* train */ 
 .train-container {
     overflow: hidden; 
@@ -214,8 +216,12 @@ footer {
 }
 
 .train {
-    display: inline-block; 
-    animation: scroll 10s linear infinite; 
+    display: flex; 
+    animation: scroll 20s linear infinite; 
+}
+
+.train-content {
+    display: flex; 
 }
 
 .language {
@@ -238,14 +244,50 @@ footer {
 
 @keyframes scroll {
     0% {
-        transform: translateX(100%); 
+        transform: translateX(0); /* Start from the original position */
     }
     100% {
-        transform: translateX(-100%); 
+        transform: translateX(-80%); /* Move left by the full width of the train */
     }
 }
 
-#contact {
-    text-align: left; 
-    margin: 20px; 
+/* Pause animation on hover */
+.train-container:hover .train {
+    animation-play-state: paused; 
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }

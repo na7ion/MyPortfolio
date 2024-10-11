@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zymon Enao - Portfolio</title>
-    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -35,36 +34,49 @@
 </div>
 <h2>click why</h2>
 <section id="click-why" class="click-why-section">
-<div class="train-container">
-    <div class="train">
-        <div class="language" onclick="alert('new page or pop up!')">
-            <img src="bs.png" alt="Brawlstar Logo" class="logo">
-            <div class="name">Brawlstar</div>
+    <div class="train-container">
+        <div class="train">
+            <div class="train-content">
+                <div class="language" onclick="openModal('Brawlstar')">
+                    <img src="bs.png" alt="Brawlstar Logo" class="logo">
+                    <div class="name">Brawlstar</div>
+                </div>
+                <div class="language" onclick="openModal('MonkeyType')">
+                    <img src="mt.png" alt="MonkeyType Logo" class="logo">
+                    <div class="name">MonkeyType</div>
+                </div>
+                <div class="language" onclick="openModal('Leetcode')">
+                    <img src="lc.png" alt="Leetcode Logo" class="logo">
+                    <div class="name">Leetcode</div>
+                </div>
+                <div class="language" onclick="openModal('Github')">
+                    <img src="gh.png" alt="Github Logo" class="logo">
+                    <div class="name">Github</div>
+                </div>
+                <div class="language" onclick="openModal('Tetris')">
+                    <img src="t.png" alt="Tetris Logo" class="logo">
+                    <div class="name">Tetris</div>
+                </div>
+                <div class="language" onclick="openModal('Linkedin')">
+                    <img src="l.png" alt="Linkedin Logo" class="logo">
+                    <div class="name">Linkedin</div>
+                </div>
+                <div class="language" onclick="openModal('TableauPublic')">
+                    <img src="ta.jpg" alt="TableauPublic Logo" class="logo">
+                    <div class="name">TableauPublic</div>
+                </div>
+                <!-- Repeat for other items -->
+            </div>
         </div>
-        <div class="language" onclick="alert('Ynew page or pop up!')">
-            <img src="mt.png" alt="MonkeyType Logo" class="logo">
-            <div class="name">MonkeyType</div>
-        </div>
-        <div class="language" onclick="alert('new page or pop up!')">
-            <img src="lc.png" alt="Leetcode Logo" class="logo">
-            <div class="name">Leetcode</div>
-        </div>
-        <div class="language" onclick="alert('new page or pop up!')">
-            <img src="gh.png" alt="Github Logo" class="logo">
-            <div class="name">Github</div>
-        </div>
-        <div class="language" onclick="alert('new page or pop up!')">
-            <img src="t.png" alt="Tetris Logo" class="logo">
-            <div class="name">Tetris</div>
-        </div>
-        <div class="language" onclick="alert('new page or pop up!')">
-            <img src="l.png" alt="Linkedin Logo" class="logo">
-            <div class="name">Linkedin</div>
-        </div>
-        <div class="language" onclick="alert('new page or pop up!')">
-            <img src="ta.jpg" alt="TableauPublic Logo" class="logo">
-            <div class="name">TableauPublic</div>
-        </div>
+    </div>
+</section>
+
+<!-- Modal Structure -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle">Modal Title</h2>
+        <p id="modalContent">Some content for the modal..</p>
     </div>
 </div>
 
