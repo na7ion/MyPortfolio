@@ -152,45 +152,159 @@ section {
 }
 
 /* styling for the Hard Skills */
-.hard-skills-section {
-    margin: 20px 0;
-    text-align: center; 
-}
-
 .hard-skills-container {
     display: flex; 
-    flex-wrap: nowrap; 
+    flex-wrap: nowrap; /* Prevent wrapping to keep everything in one row */
     justify-content: space-between; 
     gap: 20px; 
     overflow-x: auto; 
+    max-width: 100%; /* Ensures it doesn't exceed the container */
 }
 
-/* style each hard skill box */
 .hard-skill-box {
     background-color: #f8f8f8; 
     border: 2px solid #333; 
     border-radius: 10px; 
     padding: 20px; 
-    width: 18%; 
+    width: 18%; /* Adjust this width as necessary to fit all boxes in one row */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     text-align: left; 
 }
 
-/* style the title of each hard skill category */
-.hard-skill-box h3 {
-    font-size: 1.5rem; 
-    margin-bottom: 10px; 
+/* Make sure the proficiency tooltip and hover effects remain unchanged */
+.proficiency::after {
+    content: '';
+    position: absolute;
+    bottom: 100%; /* Position above the element */
+    left: 50%; 
+    transform: translateX(-50%);
+    margin-bottom: 8px;
+    padding: 5px;
+    background-color: #333; /* Default tooltip background */
+    color: #fff; /* Tooltip text color */
+    border-radius: 5px; 
+    white-space: nowrap; 
+    opacity: 0; /* Hidden by default */
+    visibility: hidden; /* Hidden by default */
+    transition: opacity 0.3s ease, visibility 0.3s ease; 
+    z-index: 1; /* Ensure tooltip is on top */
 }
 
-/* style the lists inside box */
-.hard-skill-box ul {
-    list-style-type: none; 
-    padding: 0; 
+/* Change tooltip color based on skill level on hover */
+.hard-skill-box li[data-skill="9"]:hover::after {
+    background-color: #90bc24; /* Tooltip color for skill level 9 */
 }
 
-.hard-skill-box li {
-    margin: 5px 0; 
-    font-size: 1rem; 
+.hard-skill-box li[data-skill="8"]:hover::after {
+    background-color: #ffc40c; /* Tooltip color for skill level 8 */
+}
+
+.hard-skill-box li[data-skill="7"]:hover::after {
+    background-color: #f06424; /* Tooltip color for skill level 7 */
+}
+
+.hard-skill-box li[data-skill="10"]:hover::after {
+    background-color: #3074ac; /* Tooltip color for skill level 10 */
+}
+
+/* Add hover effect for changing score color */
+.hard-skill-box li.proficiency[data-skill="9"]:hover {
+    color: #90bc24; /* Match score color for skill level 9 */
+}
+
+.hard-skill-box li.proficiency[data-skill="8"]:hover {
+    color: #ffc40c; /* Match score color for skill level 8 */
+}
+
+.hard-skill-box li.proficiency[data-skill="7"]:hover {
+    color: #f06424; /* Match score color for skill level 7 */
+}
+
+.hard-skill-box li.proficiency[data-skill="10"]:hover {
+    color: #3074ac; /* Match score color for skill level 10 */
+}
+
+/* proficiency */
+.proficiency {
+    position: relative; /* Ensure tooltip is positioned correctly */
+}
+
+.proficiency::after {
+    content: '';
+    position: absolute;
+    bottom: 100%; /* Position above the element */
+    left: 50%; 
+    transform: translateX(-50%);
+    margin-bottom: 8px;
+    padding: 5px;
+    background-color: #333; /* Tooltip background */
+    color: #fff; /* Tooltip text color */
+    border-radius: 5px; 
+    white-space: nowrap; 
+    opacity: 0; /* Hidden by default */
+    visibility: hidden; /* Hidden by default */
+    transition: opacity 0.3s ease, visibility 0.3s ease; 
+    z-index: 1; /* Ensure tooltip is on top */
+}
+
+.proficiency:hover::after {
+    content: attr(data-skill) '/10'; /* Display proficiency on hover */
+    opacity: 1; /* Show the tooltip */
+    visibility: visible; /* Make it visible */
+}
+
+.proficiency-levels-container {
+    display: flex;
+    justify-content: center; /* Space between boxes */
+    margin-top: 10px; /* Space above the boxes */
+}
+
+.proficiency-level-box {
+    border: 2px solid #333; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding inside the boxes */
+    width: 300px; /* Width of each box */
+    text-align: center; /* Center the text */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    transition: background-color 0.3s; /* Transition effect */
+    margin: 0 5px;
+
+}
+/* Different background colors for each proficiency level box */
+.proficiency-level-box.level-1 {
+    background-color: #90bc24; /* Color for 1-2 */
+}
+
+.proficiency-level-box.level-2 {
+    background-color: #ffc40c; /* Color for 3-4 */
+}
+
+.proficiency-level-box.level-3 {
+    background-color: #f06424; /* Color for 5-6 */
+}
+
+.proficiency-level-box.level-4 {
+    background-color: #c8047c; /* Color for 7-8 */
+}
+
+.proficiency-level-box.level-5 {
+    background-color: #3074ac; /* Color for 9-10 */
+}
+
+.proficiency-level-box div {
+    margin-bottom: 5px; /* Space below each proficiency level label */
+
+}
+
+.proficiency-level-box strong {
+    font-family: 'Open Sans', sans-serif; /* Ensure Open Sans is used */
+    font-weight: 600; /* Use semi-bold (600) weight */
+    font-size: 1rem; /* Adjust this value to change size */
+}
+.proficiency-level-box div {
+    font-family: 'Open Sans', sans-serif; /* Ensure Open Sans is used */
+    font-weight: normal; /* Set description to normal weight */
+    font-size: 0.875rem; /* Smaller font size for descriptions */
 }
 
 /* footer styling */
@@ -290,4 +404,15 @@ footer {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+.modal-images {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.modal-img {
+    width: 45%; /* Adjust width according to your preference */
+    height: auto;
 }

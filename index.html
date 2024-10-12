@@ -32,14 +32,14 @@
         <img src="1708444541813.jfif" alt="Your Photo">
     </div>
 </div>
-<h2>click why</h2>
+<h2>my profiles and my stats that i find with good data visualizationb</h2>
 <section id="click-why" class="click-why-section">
     <div class="train-container">
         <div class="train">
             <div class="train-content">
                 <div class="language" onclick="openModal('Brawlstar')">
                     <img src="bs.png" alt="Brawlstar Logo" class="logo">
-                    <div class="name">Brawlstar</div>
+                    <div class="name">Brawlstars</div>
                 </div>
                 <div class="language" onclick="openModal('MonkeyType')">
                     <img src="mt.png" alt="MonkeyType Logo" class="logo">
@@ -65,7 +65,35 @@
                     <img src="ta.jpg" alt="TableauPublic Logo" class="logo">
                     <div class="name">TableauPublic</div>
                 </div>
-                <!-- Repeat for other items -->
+            <div class="train-content">
+                <div class="language" onclick="openModal('Brawlstar')">
+                    <img src="bs.png" alt="Brawlstar Logo" class="logo">
+                    <div class="name">Brawlstars</div>
+                </div>
+                <div class="language" onclick="openModal('MonkeyType')">
+                    <img src="mt.png" alt="MonkeyType Logo" class="logo">
+                    <div class="name">MonkeyType</div>
+                </div>
+                <div class="language" onclick="openModal('Leetcode')">
+                    <img src="lc.png" alt="Leetcode Logo" class="logo">
+                    <div class="name">Leetcode</div>
+                </div>
+                <div class="language" onclick="openModal('Github')">
+                    <img src="gh.png" alt="Github Logo" class="logo">
+                    <div class="name">Github</div>
+                </div>
+                <div class="language" onclick="openModal('Tetris')">
+                    <img src="t.png" alt="Tetris Logo" class="logo">
+                    <div class="name">Tetris</div>
+                </div>
+                <div class="language" onclick="openModal('Linkedin')">
+                    <img src="l.png" alt="Linkedin Logo" class="logo">
+                    <div class="name">Linkedin</div>
+                </div>
+                <div class="language" onclick="openModal('TableauPublic')">
+                    <img src="ta.jpg" alt="TableauPublic Logo" class="logo">
+                    <div class="name">TableauPublic</div>
+                </div>
             </div>
         </div>
     </div>
@@ -76,6 +104,14 @@
     <div class="modal-content">
         <span class="close" onclick="closeModal()">&times;</span>
         <h2 id="modalTitle">Modal Title</h2>
+        
+        <!-- Container for side-by-side images -->
+        <div class="modal-images">
+            <img id="image1" src="" alt=" " class="modal-img">
+            <img id="image2" src="" alt=" " class="modal-img">
+        </div>
+        
+        <!-- Description goes here -->
         <p id="modalContent">Some content for the modal..</p>
     </div>
 </div>
@@ -108,39 +144,38 @@
         <li>😄 Self-motivated and capable of working independently, while also thriving in team environments.</li>
     </ul>
 </div>
-<h2>Hover to see my skill proficiency</h2>
 <section id="hard-skills" class="hard-skills-section">
     <h2>Hard Skills</h2>
     <div class="hard-skills-container">
         <div class="hard-skill-box">
             <h3>Office Management</h3>
             <ul>
-                <li><img src="file.png" alt="File Management Icon" width="20"> File Management</li>
-                <li><img src="save-time.png" alt="Time Management Icon" width="20"> Time Management</li>
-                <li><img src="active-directory.png" alt="Active Directory Icon" width="20"> Active Directory</li>
-                <li><img src="office.png" alt="Microsoft Office Icon" width="20"> Microsoft Office</li>
-                <li><img src="excel-file.png" alt="Advanced Excel Icon" width="20"> Advance Excel</li>
-            </ul>
+            <li class="proficiency" data-skill="9"><img src="file.png" alt="File Management Icon" width="20"> File Management</li>
+            <li class="proficiency" data-skill="8"><img src="save-time.png" alt="Time Management Icon" width="20"> Time Management</li>
+            <li class="proficiency" data-skill="7"><img src="active-directory.png" alt="Active Directory Icon" width="20"> Active Directory</li>
+            <li class="proficiency" data-skill="10"><img src="office.png" alt="Microsoft Office Icon" width="20"> Microsoft Office</li>
+            <li class="proficiency" data-skill="8"><img src="excel-file.png" alt="Advanced Excel Icon" width="20"> Advanced Excel</li>
+        </ul>
         </div>
         <div class="hard-skill-box">
             <h3>Computer/Technical</h3>
             <ul>
-                <li><img src="computer.png" alt="Computer Cleaning/Assembling Icon" width="20"> Computer Cleaning/Assembling</li>
-                <li><img src="video-file.png" alt="Computer Formatting Icon" width="20"> Computer Formatting</li>
-                <li><img src="troubleshooting.png" alt="Troubleshooting Icon" width="20"> Troubleshooting</li>
-                <li><img src="computer(1).png" alt="Networking Icon" width="20"> Networking</li>
-                <li><img src="software.png" alt="Software & Hardware Installing Icon" width="20"> Software & Hardware Installing</li>
+                <li class="proficiency" data-skill="9"><img src="computer.png" alt="Computer Cleaning/Assembling Icon" width="20"> Computer Cleaning/Assembling</li>
+                <li class="proficiency" data-skill="9"><img src="video-file.png" alt="Computer Formatting Icon" width="20"> Computer Formatting</li>
+                <li class="proficiency" data-skill="9"><img src="troubleshooting.png" alt="Troubleshooting Icon" width="20"> Troubleshooting</li>
+                <li class="proficiency" data-skill="9"><img src="computer(1).png" alt="Networking Icon" width="20"> Networking</li>
+                <li class="proficiency" data-skill="9"><img src="software.png" alt="Software & Hardware Installing Icon" width="20"> Software & Hardware Installing</li>
             </ul>
         </div>
         <div class="hard-skill-box">
             <h3>Programming Languages</h3>
             <ul>
-                <li><img src="c-.png" alt="C++ Logo" width="20"> C++</li>
-                <li><img src="python.png" alt="Python Logo" width="20"> Python</li>
-                <li><img src="java-script.png" alt="JavaScript Logo" width="20"> JavaScript</li>
-                <li><img src="sql-server.png" alt="SQL Logo" width="20"> SQL</li>
-                <li><img src="css-3.png" alt="HTML/CSS Logo" width="20"> HTML/CSS</li>
-                <li><img src="php-programming-language.png" alt="PHP Logo" width="20"> PHP</li>
+                <li class="proficiency" data-skill="9"><img src="c-.png" alt="C++ Logo" width="20"> C++</li>
+                <li class="proficiency" data-skill="9"><img src="python.png" alt="Python Logo" width="20"> Python</li>
+                <li class="proficiency" data-skill="9"><img src="java-script.png" alt="JavaScript Logo" width="20"> JavaScript</li>
+                <li class="proficiency" data-skill="9"><img src="sql-server.png" alt="SQL Logo" width="20"> SQL</li>
+                <li class="proficiency" data-skill="9"><img src="css-3.png" alt="HTML/CSS Logo" width="20"> HTML/CSS</li>
+                <li class="proficiency" data-skill="9"><img src="php-programming-language.png" alt="PHP Logo" width="20"> PHP</li>
             </ul>
         </div>
 
@@ -148,24 +183,47 @@
         <div class="hard-skill-box">
             <h3>Computer Software</h3>
                 <ul>
-                    <li><img src="after-effects.png" alt="After Effects Icon" width="20"> After Effects</li>
-                    <li><img src="photoshop.png" alt="Adobe Photoshop Icon" width="20"> Adobe Photoshop</li>
-                    <li><img src="digital.png" alt="VirtualBox Icon" width="20"> VirtualBox</li>
-                    <li><img src="5968571.png" alt="Visual Basic Icon" width="20"> Visual Basic</li>
+                    <li class="proficiency" data-skill="9"><img src="after-effects.png" alt="After Effects Icon" width="20"> After Effects</li>
+                    <li class="proficiency" data-skill="9"><img src="photoshop.png" alt="Adobe Photoshop Icon" width="20"> Adobe Photoshop</li>
+                    <li class="proficiency" data-skill="9"><img src="digital.png" alt="VirtualBox Icon" width="20"> VirtualBox</li>
+                    <li class="proficiency" data-skill="9"><img src="5968571.png" alt="Visual Basic Icon" width="20"> Visual Basic</li>
                 </ul>
         </div>
         <div class="hard-skill-box">
             <h3>Data Analysis</h3>
                 <ul>
-                    <li><img src="excel.png" alt="Excel Icon" width="20"> Excel (Power Query, Pivot Table, x, y, h, index lookup)</li>
-                    <li><img src="mysql.png" alt="MySQL Icon" width="20"> MySQL</li>
-                    <li><img src="dashboard.png" alt="Tableau Icon" width="20"> Tableau</li>
-                    <li><img src="statistics.png" alt="Statistics Icon" width="20"> Statistics</li>
-                    <li><img src="description.png" alt="Data Visualization Icon" width="20"> Data Visualization</li>
+                    <li class="proficiency" data-skill="9"><img src="excel.png" alt="Excel Icon" width="20"> Excel (Power Query, Pivot Table, x, y, h, index lookup)</li>
+                    <li class="proficiency" data-skill="9"><img src="mysql.png" alt="MySQL Icon" width="20"> MySQL</li>
+                    <li class="proficiency" data-skill="9"><img src="dashboard.png" alt="Tableau Icon" width="20"> Tableau</li>
+                    <li class="proficiency" data-skill="9"><img src="statistics.png" alt="Statistics Icon" width="20"> Statistics</li>
+                    <li class="proficiency" data-skill="9"><img src="description.png" alt="Data Visualization Icon" width="20"> Data Visualization</li>
                 </ul>
             </ul>
         </div>
     </div>
+<h2>Hover to see my skill proficiency</h2>
+<div class="proficiency-levels-container">
+    <div class="proficiency-level-box level-1">
+        <strong>1-2: Functional </strong>
+        <div>Basic understanding of essential concepts and tasks. Can manage simple situations with guidance but may require assistance with more complex challenges.</div>
+    </div>
+    <div class="proficiency-level-box level-2">
+        <strong>3-4: Intermediate </strong>
+        <div>Able to handle a range of tasks with moderate confidence. Comfortable with familiar situations but may need support when faced with new or more intricate challenges.</div>
+    </div>
+    <div class="proficiency-level-box level-3">
+        <strong>5-6: Upper Intermediate </strong>
+        <div>Demonstrates a solid grasp of tasks and can navigate more complex scenarios effectively. Growing independence and confidence in skill application, with the ability to troubleshoot common issues.</div>
+    </div>
+    <div class="proficiency-level-box level-4"> 
+        <strong>7-8: Advanced </strong>
+        <div>Exhibits strong skills and proficiency in managing multiple tasks simultaneously. Capable of tackling intricate challenges with a high level of competence and minimal supervision.</div>
+    </div>
+    <div class="proficiency-level-box level-5">
+        <strong>9-10: Professional </strong>
+        <div>I live and breathe this! These skills are part of my identity. I can perform tasks seamlessly, even with my eyes closed, and serve as a trusted expert and mentor in my field.</div>
+    </div>
+</div>
 </section>
 
 
